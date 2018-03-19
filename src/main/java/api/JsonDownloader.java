@@ -15,8 +15,7 @@ public class JsonDownloader {
 		StringBuilder strBuilder = new StringBuilder();
 
 		try {
-			inputstrem = new URL("http://api.nbp.pl/api/exchangerates/rates/c/eur/2017-11-20/2017-11-24/?format=json").openStream();
-//			inputstrem = new URL(UrlCreator.createUrlString()).openStream();
+			inputstrem = new URL(UrlCreator.createUrlString()).openStream();
 			bufferedReader = new BufferedReader(new InputStreamReader(inputstrem, Charset.forName("UTF-8")));
 
 			String cp;
